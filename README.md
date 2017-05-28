@@ -1,6 +1,6 @@
 # Angular-Schule: Extension Pack
 
-![Logo](images/angular-shield.png)
+![Logo](images/angular-shield-overflow.png)
 
 Useful extensions for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
