@@ -1,0 +1,39 @@
+{
+    "name": "angular-schule-extension-pack",
+    "displayName": "Angular-Schule: Extension Pack",
+    "description": "A list of extensions for our angular workshops",
+    "icon": "images/angular-shield.png",
+    "galleryBanner": {
+        "color": "#34474F",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/angular-schule/vscode-angular-schule-extension-pack.git"
+    },
+    "keywords": [
+        "Angular",
+        "Angular 2",
+        "Angular 4",
+        "TypeScript",
+        "workshop"
+    ],
+    "version": "0.0.1",
+    "publisher": "Angular-Schule",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionDependencies": [
+        "eg2.tslint",
+        "Angular.ng-template",
+        "steoates.autoimport",
+        "EditorConfig.EditorConfig",
+        "robertohuertasm.vscode-icons",
+        "msjsdiag.debugger-for-chrome",
+        "christian-kohler.path-intellisense"
+    ]
+}
