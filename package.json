@@ -20,7 +20,7 @@
         "workshop"
     ],
     "version": "0.0.1",
-    "publisher": "Angular-Schule",
+    "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
     },
