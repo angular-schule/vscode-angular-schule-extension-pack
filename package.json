@@ -19,7 +19,7 @@
         "TypeScript",
         "workshop"
     ],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
