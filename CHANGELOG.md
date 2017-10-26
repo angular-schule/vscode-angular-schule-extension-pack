@@ -7,4 +7,5 @@ Please install this pack before our workshop.
 - Initial releases with minor fixes
 
 ## v0.1.0
-- Adds opinionated user settings for a quick workshop start
+- Adds opinionated user settings for a quick workshop start (activated on first run)
+- The update command is also available from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Angular.Schule`.

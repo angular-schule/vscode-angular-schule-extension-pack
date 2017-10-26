@@ -12,7 +12,7 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 
 ## What's inside?
 
-This extensions contains the following extensions in one single pack:
+This extensions contains the following **extensions** in one single pack:
 
 * [`ext install tslint`](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 * [`ext install ng-template`](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
@@ -22,7 +22,18 @@ This extensions contains the following extensions in one single pack:
 * [`ext install debugger-for-chrome`](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [`ext install path-intellisense`](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-The extension will also change some minor User Settings like auto-save and vscode-icons.
+This extension will also change some **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
+
+```json
+{
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.projectDetection.autoReload": true,
+    "files.autoSave": "onFocusChange",
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
+
+```
+
 
 ## Feedback
 

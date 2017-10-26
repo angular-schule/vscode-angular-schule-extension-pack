@@ -39,11 +39,18 @@
         "christian-kohler.path-intellisense"
     ],
     "activationEvents": [
-        "onCommand:extension.getVersion"
+        "onCommand:extension.getVersion",
+        "onCommand:extension.updateConfig",
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
+            {
+                "command": "extension.updateConfig",
+                "title": "Update User Settings (configuration in settings.json)",
+                "category": "Angular.Schule"
+            },            
             {
                 "command": "extension.getVersion",
                 "title": "Get Version",
@@ -52,27 +59,12 @@
         ],
         "configuration": {
             "type": "object",
-            "title": "Angular.Schule User Settings Overwrite",
+            "title": "Angular-Schule: Extension Pack",
             "properties": {
-                "workbench.iconTheme": {
-                    "type": ["string", "null"],
-                    "default": "vscode-icons",
-                    "description": "OVERRIDE: Specifies the icon theme used in the workbench or 'null' to not show any file icons."
-                },
-                "vsicons.projectDetection.autoReload": {
+                "angular-schule.configUpdated": {
                     "type": "boolean",
-                    "default": true,
-                    "description": "OVERRIDE: If set to true, the extension will restart automatically on project detection."
-                },                
-                "files.autoSave": {
-                    "type": "string",
-                    "default": "onFocusChange",
-                    "description": "OVERRIDE: Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'."
-                },                
-                "typescript.tsdk": {
-                    "type": ["string", "null"],
-                    "default": "node_modules/typescript/lib",
-                    "description": "OVERRIDE: Specifies the folder path containing the tsserver and lib*.d.ts files to use."
+                    "default": false,
+                    "description": "If set to 'true', the extension will not update the user settings again. This setting is to 'true' after update."
                 }
             }
         }        
