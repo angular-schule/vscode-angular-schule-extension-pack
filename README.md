@@ -42,7 +42,7 @@ Please write a mail to `team@angular.schule`.
 
 ----------
 
-<img src="images/logo-angular-schule.png" height="60">
+![Logo](images/logo-angular-schule.png")
 
 ### &copy; 2017 http://angular.schule
 
