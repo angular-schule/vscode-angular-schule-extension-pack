@@ -1,6 +1,6 @@
 {
     "name": "angular-schule-extension-pack",
-    "displayName": "Angular-Schule: Extension Pack",
+    "displayName": "Angular.Schule: Extension Pack",
     "description": "A list of extensions for our angular workshops",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
@@ -16,10 +16,12 @@
         "Angular",
         "Angular 2",
         "Angular 4",
+        "Angular 5",
+        "Angular Schule",
         "TypeScript",
         "workshop"
     ],
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
@@ -35,5 +37,57 @@
         "robertohuertasm.vscode-icons",
         "msjsdiag.debugger-for-chrome",
         "christian-kohler.path-intellisense"
-    ]
+    ],
+    "activationEvents": [
+        "onCommand:extension.getVersion"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.getVersion",
+                "title": "Get Version",
+                "category": "Angular.Schule"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Angular.Schule User Settings Overwrite",
+            "properties": {
+                "workbench.iconTheme": {
+                    "type": ["string", "null"],
+                    "default": "vscode-icons",
+                    "description": "OVERRIDE: Specifies the icon theme used in the workbench or 'null' to not show any file icons."
+                },
+                "vsicons.projectDetection.autoReload": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "OVERRIDE: If set to true, the extension will restart automatically on project detection."
+                },                
+                "files.autoSave": {
+                    "type": "string",
+                    "default": "onFocusChange",
+                    "description": "OVERRIDE: Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'."
+                },                
+                "typescript.tsdk": {
+                    "type": ["string", "null"],
+                    "default": "node_modules/typescript/lib",
+                    "description": "OVERRIDE: Specifies the folder path containing the tsserver and lib*.d.ts files to use."
+                }
+            }
+        }        
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.3",
+        "vscode": "^1.1.5",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
 }

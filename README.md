@@ -2,7 +2,7 @@
 
 ![Logo](images/angular-shield-overflow.png)
 
-Useful extensions for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
+Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
 ## Installation
@@ -22,9 +22,16 @@ This extensions contains the following extensions in one single pack:
 * [`ext install debugger-for-chrome`](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [`ext install path-intellisense`](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
+The extension will also change some minor User Settings like auto-save and vscode-icons.
+
 ## Feedback
 
 Questions, Suggestion, Complains?  
 Please write a mail to `team@angular.schule`.
 
+----------
+
+<img src="images/logo-angular-schule.png" height="60">
+
+### &copy; 2017 http://angular.schule
 
