@@ -4,7 +4,7 @@
     "description": "A list of extensions for our angular workshops",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
-        "color": "#a92263",
+        "color": "#6661c0",
         "theme": "dark"
     },
     "license": "MIT",
@@ -19,7 +19,7 @@
         "TypeScript",
         "workshop"
     ],
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
