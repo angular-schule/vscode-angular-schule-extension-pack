@@ -34,7 +34,8 @@
         "robertohuertasm.vscode-icons",
         "msjsdiag.debugger-for-chrome",
         "christian-kohler.path-intellisense",
-        "CoenraadS.bracket-pair-colorizer"
+        "CoenraadS.bracket-pair-colorizer",
+        "formulahendry.auto-rename-tag"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",
