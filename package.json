@@ -33,7 +33,8 @@
         "EditorConfig.EditorConfig",
         "robertohuertasm.vscode-icons",
         "msjsdiag.debugger-for-chrome",
-        "christian-kohler.path-intellisense"
+        "christian-kohler.path-intellisense",
+        "CoenraadS.bracket-pair-colorizer"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",
