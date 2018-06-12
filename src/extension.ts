@@ -14,6 +14,8 @@ function updateConfig() {
     // DISABLED - flickering is very annoying!
     // If set to true, the extension will restart automatically on project detection.
     // setConfig('vsicons.projectDetection.autoReload', true, true);
+    // NOW Revoke old setting:
+    setConfig('vsicons.projectDetection.autoReload', false, true);
 
     // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
     setConfig('files.autoSave', 'onFocusChange', true);
@@ -21,13 +23,12 @@ function updateConfig() {
     // Specifies the folder path containing the tsserver and lib*.d.ts files to use.
     // always prefers local tsc installation
     setConfig('typescript.tsdk', 'node_modules/typescript/lib', true);
-
-    // Finally sets own config to avoid repeated updates
-    setConfig('angular-schule.configUpdated', true, true);
-    
+   
     // New: see https://code.visualstudio.com/updates/v1_23#_run-code-actions-on-save
     setConfig('editor.codeActionsOnSave',  { "source.organizeImports": true }, true);    
 
+    // Finally sets own config to avoid repeated updates
+    setConfig('angular-schule.configUpdated', true, true);
 
     vscode.window.showInformationMessage('Angular.Schule has successfully updated your settings.');
 }

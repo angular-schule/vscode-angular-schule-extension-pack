@@ -14,22 +14,25 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 
 This extensions contains the following **extensions** in one single pack:
 
-* [`ext install tslint`](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-* [`ext install ng-template`](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
-* [`ext install autoimport`](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
-* [`ext install EditorConfig`](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-* [`ext install vscode-icons`](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
-* [`ext install debugger-for-chrome`](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-* [`ext install path-intellisense`](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+* [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+* [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+* [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+* [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+* [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
 
 This extension will also change some **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
 
 ```json
 {
     "workbench.iconTheme": "vscode-icons",
-    "vsicons.projectDetection.autoReload": true,
     "files.autoSave": "onFocusChange",
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.codeActionsOnSave": { "source.organizeImports": true }
 }
 
 ```

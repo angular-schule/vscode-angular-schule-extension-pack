@@ -4,7 +4,15 @@ Useful extensions and settings for Angular development with [Visual Studio Code]
 Please install this pack before our workshop.
 
 ## v0.2.0
-- Upcomming release, mainly keeping the list of extensions up to date
+- keeps the list of extensions up to date
+- Added
+  * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+  * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+  * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
+- Removed:
+  * [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+- some small adjustments to the forced settings
 
 ## v0.1.1 - v0.1.2
 - New colorful logo, no other changes
