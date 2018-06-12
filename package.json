@@ -30,7 +30,6 @@
     "extensionDependencies": [
         "eg2.tslint",
         "Angular.ng-template",
-        "steoates.autoimport",
         "EditorConfig.EditorConfig",
         "robertohuertasm.vscode-icons",
         "msjsdiag.debugger-for-chrome",
