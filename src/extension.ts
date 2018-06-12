@@ -11,17 +11,23 @@ function updateConfig() {
     // Specifies the icon theme used in the workbench or 'null' to not show any file icons."
     setConfig('workbench.iconTheme', 'vscode-icons', true);
 
+    // DISABLED - flickering is very annoying!
     // If set to true, the extension will restart automatically on project detection.
-    setConfig('vsicons.projectDetection.autoReload', true, true);
+    // setConfig('vsicons.projectDetection.autoReload', true, true);
 
     // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
     setConfig('files.autoSave', 'onFocusChange', true);
 
     // Specifies the folder path containing the tsserver and lib*.d.ts files to use.
+    // always prefers local tsc installation
     setConfig('typescript.tsdk', 'node_modules/typescript/lib', true);
 
     // Finally sets own config to avoid repeated updates
     setConfig('angular-schule.configUpdated', true, true);
+    
+    // New: see https://code.visualstudio.com/updates/v1_23#_run-code-actions-on-save
+    setConfig('editor.codeActionsOnSave',  { "source.organizeImports": true }, true);    
+
 
     vscode.window.showInformationMessage('Angular.Schule has successfully updated your settings.');
 }
@@ -39,7 +45,7 @@ export function activate(context: vscode.ExtensionContext) {
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
     let disposable = vscode.commands.registerCommand('extension.getVersion', () => {
-        vscode.window.showInformationMessage('Angular.Schule v0.1.0');
+        vscode.window.showInformationMessage('Angular.Schule v0.2.0');
     });
 
     let disposable2 = vscode.commands.registerCommand('extension.updateConfig', () => {
