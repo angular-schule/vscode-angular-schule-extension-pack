@@ -47,5 +47,5 @@ Please write a mail to `team@angular.schule`.
 
 ![Logo](images/logo-angular-schule.png)
 
-### &copy; 2017 http://angular.schule
+### &copy; 2018 http://angular.schule
 

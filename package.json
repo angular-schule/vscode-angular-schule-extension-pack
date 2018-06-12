@@ -3,6 +3,7 @@
     "displayName": "Angular.Schule: Extension Pack",
     "description": "A list of extensions for our angular workshops",
     "icon": "images/angular-shield.png",
+    "private": true,
     "galleryBanner": {
         "color": "#6661c0",
         "theme": "dark"
@@ -71,8 +72,8 @@
         }
     },
     "scripts": {
-        "prepublish": "npm run compile",
-        "publish": "vsce publish",
+        "vscode:prepublish": "npm run compile",
+        "vscode:publish": "vsce publish",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
