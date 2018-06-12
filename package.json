@@ -35,7 +35,8 @@
         "msjsdiag.debugger-for-chrome",
         "christian-kohler.path-intellisense",
         "CoenraadS.bracket-pair-colorizer",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",
