@@ -36,7 +36,8 @@
         "christian-kohler.path-intellisense",
         "CoenraadS.bracket-pair-colorizer",
         "formulahendry.auto-rename-tag",
-        "formulahendry.auto-close-tag"
+        "formulahendry.auto-close-tag",
+        "thekalinga.bootstrap4-vscode"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",
