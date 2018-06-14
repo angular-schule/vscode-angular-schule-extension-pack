@@ -3,6 +3,8 @@
 import * as vscode from 'vscode';
 import { getConfig, setConfig } from './helpers';
 
+const VERSION = '0.2.1';
+
 function updateConfig() {
 
     // FYI
@@ -12,23 +14,26 @@ function updateConfig() {
     setConfig('workbench.iconTheme', 'vscode-icons', true);
 
     // DISABLED - flickering is very annoying!
-    // If set to true, the extension will restart automatically on project detection.
-    // setConfig('vsicons.projectDetection.autoReload', true, true);
-    // NOW Revoke old setting:
-    setConfig('vsicons.projectDetection.autoReload', false, true);
+    // this setting was active until v0.2.0
+    setConfig('vsicons.projectDetection.autoReload', undefined, true);
 
-    // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
+    // Controls auto save of dirty files. Accepted values:
+    // 'off', 'afterDelay', 'onFocusChange' (editor loses focus),
+    // 'onWindowChange' (window loses focus).
     setConfig('files.autoSave', 'onFocusChange', true);
 
-    // Specifies the folder path containing the tsserver and lib*.d.ts files to use.
-    // always prefers local tsc installation
-    setConfig('typescript.tsdk', 'node_modules/typescript/lib', true);
+    // DISABLED - does NOT work in settings.config
+    // this setting was active until v0.2.0
+    // see https://github.com/Microsoft/vscode/issues/48640
+    setConfig('typescript.tsdk', undefined, true);
    
-    // New: see https://code.visualstudio.com/updates/v1_23#_run-code-actions-on-save
-    setConfig('editor.codeActionsOnSave',  { "source.organizeImports": true }, true);    
+    // DISABLED - this is just super-annoying
+    // this setting was active until v0.2.0
+    // see https://code.visualstudio.com/updates/v1_23#_run-code-actions-on-save
+    setConfig('editor.codeActionsOnSave', undefined, true);    
 
     // Finally sets own config to avoid repeated updates
-    setConfig('angular-schule.configUpdated', true, true);
+    setConfig('angular-schule.configUpdated', VERSION, true);
 
     vscode.window.showInformationMessage('Angular.Schule has successfully updated your settings.');
 }
@@ -46,7 +51,7 @@ export function activate(context: vscode.ExtensionContext) {
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
     let disposable = vscode.commands.registerCommand('extension.getVersion', () => {
-        vscode.window.showInformationMessage('Angular.Schule v0.2.0');
+        vscode.window.showInformationMessage('Angular.Schule v' + VERSION);
     });
 
     let disposable2 = vscode.commands.registerCommand('extension.updateConfig', () => {
@@ -59,7 +64,7 @@ export function activate(context: vscode.ExtensionContext) {
     // naughty update of the vscode configuration on first run
     // requires the evil `"activationEvents": ["*"]`
     let configUpdated = getConfig('angular-schule').get('configUpdated');
-    if(!configUpdated) {
+    if(configUpdated !== VERSION) {
         updateConfig();
     }
 }

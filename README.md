@@ -25,16 +25,13 @@ This extensions contains the following **extensions** in one single pack:
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
 
-This extension will also change some **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
+This extension will also change the following **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
 
 ```json
 {
     "workbench.iconTheme": "vscode-icons",
-    "files.autoSave": "onFocusChange",
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "editor.codeActionsOnSave": { "source.organizeImports": true }
+    "files.autoSave": "onFocusChange"
 }
-
 ```
 
 
