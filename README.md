@@ -22,8 +22,6 @@ This extensions contains the following **extensions** in one single pack:
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-* [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-* [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
 
 This extension will also change the following **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
 
