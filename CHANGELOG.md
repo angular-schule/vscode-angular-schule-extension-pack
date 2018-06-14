@@ -3,6 +3,11 @@
 Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
+# v0.3.0
+- extensions removed:
+  * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode), fixes issue #1
+  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag), VSCode has own support for [closing HTML tags](https://code.visualstudio.com/updates/v1_16#_html-close-tags)
+
 ## v0.2.1
 - tweaks settings:
   * deletes old entry `typescript.tsdk` in user settings (see https://github.com/Microsoft/vscode/issues/48640) (for previous installations)

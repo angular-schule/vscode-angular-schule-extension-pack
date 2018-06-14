@@ -20,7 +20,7 @@
         "TypeScript",
         "workshop"
     ],
-    "version": "0.2.1",
+    "version": "0.3.0",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
@@ -36,9 +36,7 @@
         "msjsdiag.debugger-for-chrome",
         "christian-kohler.path-intellisense",
         "CoenraadS.bracket-pair-colorizer",
-        "formulahendry.auto-rename-tag",
-        "formulahendry.auto-close-tag",
-        "thekalinga.bootstrap4-vscode"
+        "formulahendry.auto-rename-tag"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",
@@ -64,9 +62,9 @@
             "title": "Angular-Schule: Extension Pack",
             "properties": {
                 "angular-schule.configUpdated": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "If set to 'true', the extension will not update the user settings again. This setting is to 'true' after update."
+                    "type": "string",
+                    "default": "0.0.0",
+                    "description": "Saves the current version number. If it does not match, then the extension was updated and `extension.updateConfig` is going to be triggered. This will update the current version number again."
                 }
             }
         }
