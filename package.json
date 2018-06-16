@@ -20,7 +20,7 @@
         "TypeScript",
         "workshop"
     ],
-    "version": "0.3.1",
+    "version": "0.4.1",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
@@ -32,11 +32,13 @@
         "eg2.tslint",
         "Angular.ng-template",
         "EditorConfig.EditorConfig",
-        "robertohuertasm.vscode-icons",
         "msjsdiag.debugger-for-chrome",
         "christian-kohler.path-intellisense",
         "CoenraadS.bracket-pair-colorizer",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        "AngularDoc.angulardoc-vscode",
+        "material-icon-theme",
+        "aeschli.vscode-css-formatter"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",

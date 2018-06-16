@@ -3,7 +3,18 @@
 Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
-# v0.3.0 + # v0.3.1
+# v0.4.1
+- extensions added:
+  * [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
+  * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+  * [CSS Formatter](https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
+- extensions removed:
+  * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons), fixes issue #1 because "Project Auto-Detection" drives me nuts!
+- tweaks settings:
+  * adds entry `vsicons.projectDetection.disableDetect:true` to make `vscode-icons` silent, you have to uninstall `vscode-icons` manually if you upgraded from a previous version
+
+
+# v0.3.1
 - extensions removed:
   * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode), fixes issue #1
   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag), VSCode has own support for [closing HTML tags](https://code.visualstudio.com/updates/v1_16#_html-close-tags)

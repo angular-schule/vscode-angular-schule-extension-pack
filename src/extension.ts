@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 import { getConfig, setConfig } from './helpers';
 
-const VERSION = '0.3.1';
+const VERSION = '0.4.1';
 
 function updateConfig() {
 
@@ -11,11 +11,15 @@ function updateConfig() {
     // let config = getConfig();
 
     // Specifies the icon theme used in the workbench or 'null' to not show any file icons."
-    setConfig('workbench.iconTheme', 'vscode-icons', true);
+    setConfig('workbench.iconTheme', 'material-icon-theme', true);
 
     // DISABLED - flickering is very annoying!
     // this setting was active until v0.2.0
     setConfig('vsicons.projectDetection.autoReload', undefined, true);
+    
+    // since v0.4.0 to make `vscode-icons` silent if we upgraded from a previous version
+    // tipp: uninstall `vscode-icons`!
+    setConfig('vsicons.projectDetection.disableDetect', true, true);
 
     // Controls auto save of dirty files. Accepted values:
     // 'off', 'afterDelay', 'onFocusChange' (editor loses focus),
