@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 import { getConfig, setConfig } from './helpers';
 
-const VERSION = '0.4.1';
+const VERSION = '0.4.2';
 
 function updateConfig() {
 
