@@ -3,7 +3,7 @@
 Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
-# v0.4.3
+# v0.4.4
 - extensions added:
   * [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
   * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
