@@ -3,6 +3,12 @@
 Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
+# v0.4.5
+- extensions removed:
+  * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- This release is a workaround until theme extensions can be required again. Right now this is broken in VSCode, see [#3](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/3)
+- Functionality should come back with v1.26 of VSCode.
+
 # v0.4.4
 - extensions added:
   * [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
