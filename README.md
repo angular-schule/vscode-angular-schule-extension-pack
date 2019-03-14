@@ -19,7 +19,7 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 
 This extensions contains the following **extensions** in one single pack:
 
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 * [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
@@ -49,5 +49,5 @@ Please write a mail to `team@angular.schule`.
 
 ![Logo](images/logo-angular-schule.png)
 
-### &copy; 2018 http://angular.schule
+### &copy; 2019 http://angular.schule
 

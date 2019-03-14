@@ -3,6 +3,13 @@
 Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
+# v0.4.6
+- extension removed:
+  * [TSLint (deprecated)](https://marketplace.visualstudio.com/items?itemName=eg2.tslint), fixes issue [#6](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/6)
+- extension added:
+  * [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+- ❗ Important: If you still have the deprecated `vscode-tslint` extension in VS Code installed, please disable/remove it to avoid linting files twice!
+
 # v0.4.5
 - extensions removed:
   * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
@@ -22,7 +29,7 @@ Please install this pack before our workshop.
 
 # v0.3.1
 - extensions removed:
-  * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode), fixes issue #1
+  * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode), fixes issue [#1](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/1)
   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag), VSCode has own support for [closing HTML tags](https://code.visualstudio.com/updates/v1_16#_html-close-tags)
 
 ## v0.2.1

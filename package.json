@@ -20,7 +20,7 @@
         "TypeScript",
         "workshop"
     ],
-    "version": "0.4.5",
+    "version": "0.4.6",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
@@ -29,7 +29,7 @@
         "Extension Packs"
     ],
     "extensionDependencies": [
-        "eg2.tslint",
+        "ms-vscode.vscode-typescript-tslint-plugin",
         "Angular.ng-template",
         "EditorConfig.EditorConfig",
         "msjsdiag.debugger-for-chrome",
