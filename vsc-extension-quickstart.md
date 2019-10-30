@@ -31,3 +31,22 @@ We pass the function containing the implementation of the command as the second 
 * Make changes to `test/extension.test.ts` or create new test files inside the `test` folder.
     * By convention, the test runner will only consider files matching the name pattern `**.test.ts`.
     * You can create folders inside the `test` folder to structure your tests any way you want.
+
+## Publish
+
+Get a Personal Access Token:
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token
+
+```
+vsce login (publisher name)
+```
+
+`vsce` will ask you for the Personal Access Token and remember it for future commands.
+
+Our publisher name: `angular-schule`
+
+Now run this:
+```
+npm run vscode:prepublish
+npm run vscode:publish
+```

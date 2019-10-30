@@ -3,20 +3,22 @@
 Useful extensions and settings for Angular development with [Visual Studio Code](https://code.visualstudio.com/).  
 Please install this pack before our workshop.
 
-# v0.4.6
+## v0.4.7
+- extension removed:
+  * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+
+## v0.4.6
 - extension removed:
   * [TSLint (deprecated)](https://marketplace.visualstudio.com/items?itemName=eg2.tslint), fixes issue [#6](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/6)
 - extension added:
   * [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 - ❗ Important: If you still have the deprecated `vscode-tslint` extension in VS Code installed, please disable/remove it to avoid linting files twice!
 
-# v0.4.5
+## v0.4.5
 - extensions removed:
-  * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- This release is a workaround until theme extensions can be required again. Right now this is broken in VSCode, see [#3](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/3)
-- Functionality should come back with v1.26 of VSCode.
+  * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme), see [#3](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/3)
 
-# v0.4.4
+## v0.4.4
 - extensions added:
   * [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
   * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
@@ -27,7 +29,7 @@ Please install this pack before our workshop.
   * adds entry `vsicons.projectDetection.disableDetect:true` to make `vscode-icons` silent, you have to uninstall `vscode-icons` manually if you upgraded from a previous version
 
 
-# v0.3.1
+## v0.3.1
 - extensions removed:
   * [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode), fixes issue [#1](https://github.com/angular-schule/vscode-angular-schule-extension-pack/issues/1)
   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag), VSCode has own support for [closing HTML tags](https://code.visualstudio.com/updates/v1_16#_html-close-tags)

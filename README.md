@@ -24,17 +24,14 @@ This extensions contains the following **extensions** in one single pack:
 * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
-* ~~[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)~~ (temporally removed)
 * [CSS Formatter](https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
 
 This extension will also change the following **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
 
 ```json
 {
-    "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "onFocusChange"
 }
 ```

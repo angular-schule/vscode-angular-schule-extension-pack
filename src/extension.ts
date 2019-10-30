@@ -10,10 +10,6 @@ function updateConfig() {
     // FYI
     // let config = getConfig();
 
-    // ADD THIS AGAIN WHEN material-icon-theme comes back!
-    // Specifies the icon theme used in the workbench or 'null' to not show any file icons."
-    // setConfig('workbench.iconTheme', 'material-icon-theme', true);
-
     // REMOVED AGAIN - flickering is very annoying!
     // this setting was active until v0.2.0
     setConfig('vsicons.projectDetection.autoReload', undefined, true);
