@@ -20,7 +20,7 @@
         "TypeScript",
         "workshop"
     ],
-    "version": "0.4.7",
+    "version": "0.4.8",
     "publisher": "angular-schule",
     "engines": {
         "vscode": "^1.12.0"
@@ -29,14 +29,11 @@
         "Extension Packs"
     ],
     "extensionDependencies": [
-        "ms-vscode.vscode-typescript-tslint-plugin",
+        "dbaeumer.vscode-eslint",
         "Angular.ng-template",
         "EditorConfig.EditorConfig",
-        "msjsdiag.debugger-for-chrome",
         "christian-kohler.path-intellisense",
-        "formulahendry.auto-rename-tag",
-        "AngularDoc.angulardoc-vscode",
-        "aeschli.vscode-css-formatter"
+        "AngularDoc.angulardoc-vscode"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",

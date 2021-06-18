@@ -19,14 +19,11 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 
 This extensions contains the following **extensions** in one single pack:
 
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
-* [CSS Formatter](https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
 
 This extension will also change the following **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
 
@@ -46,5 +43,5 @@ Please write a mail to `team@angular.schule`.
 
 ![Logo](images/logo-angular-schule.png)
 
-### &copy; 2019 http://angular.schule
+### &copy; 2021 http://angular.schule
 
