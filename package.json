@@ -32,8 +32,7 @@
         "dbaeumer.vscode-eslint",
         "Angular.ng-template",
         "EditorConfig.EditorConfig",
-        "christian-kohler.path-intellisense",
-        "AngularDoc.angulardoc-vscode"
+        "christian-kohler.path-intellisense"
     ],
     "activationEvents": [
         "onCommand:extension.getVersion",

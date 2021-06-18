@@ -23,7 +23,6 @@ This extensions contains the following **extensions** in one single pack:
 * [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-* [AngularDoc for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AngularDoc.angulardoc-vscode)
 
 This extension will also change the following **User Settings** (configuration in `settings.json`) to prepare the IDE for the workshop:
 
