@@ -3,35 +3,17 @@
 import * as vscode from 'vscode';
 import { getConfig, setConfig } from './helpers';
 
-const VERSION = '0.4.6';
+const VERSION = '0.5.0';
 
 function updateConfig() {
 
     // FYI
     // let config = getConfig();
-
-    // REMOVED AGAIN - flickering is very annoying!
-    // this setting was active until v0.2.0
-    setConfig('vsicons.projectDetection.autoReload', undefined, true);
     
-    // since v0.4.0 to make `vscode-icons` silent if we upgraded from a previous version
-    // tipp: uninstall `vscode-icons`!
-    setConfig('vsicons.projectDetection.disableDetect', true, true);
-
     // Controls auto save of dirty files. Accepted values:
     // 'off', 'afterDelay', 'onFocusChange' (editor loses focus),
     // 'onWindowChange' (window loses focus).
     setConfig('files.autoSave', 'onFocusChange', true);
-
-    // REMOVED AGAIN - does NOT work in settings.config
-    // this setting was active until v0.2.0
-    // see https://github.com/Microsoft/vscode/issues/48640
-    setConfig('typescript.tsdk', undefined, true);
-   
-    // REMOVED AGAIN - this is just super-annoying
-    // this setting was active until v0.2.0
-    // see https://code.visualstudio.com/updates/v1_23#_run-code-actions-on-save
-    setConfig('editor.codeActionsOnSave', undefined, true);    
 
     // Finally sets own config to avoid repeated updates
     setConfig('angular-schule.configUpdated', VERSION, true);
